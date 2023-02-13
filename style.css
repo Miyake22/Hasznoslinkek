@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --red:#f12711;
+    --yellow:#f5af19;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px gray;
+    position: relative;
+}
+header,footer{
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header:before , footer:before{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    opacity: 0.3;
+    content: "";
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+}
+header::before{
+    top: 0;
+}
+footer::before{
+    bottom: 0;
+}
+h1{
+    color:var(--red);
+}
+footer a{
+    text-decoration: none;color:var(--red);
+    border-bottom: 2px solid var(--yellow);
+}
+nav{
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,var(--red),var(--yellow));
+
+}
+nav a{
+    text-decoration: none;
+    width: 150px;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: #f12711;
+    color:#f5af19
+}
+main{
+    background-color: rgba(190, 190, 190, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+}
+section img{
+    width: 100%;
+    border-radius: 10px;
+}
+p{
+    text-align: center;
+}
+section a{
+    text-decoration: none;
+    width: 150px;
+    color:var(--red);
+    border: 1px solid var(--yellow);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    
+}
